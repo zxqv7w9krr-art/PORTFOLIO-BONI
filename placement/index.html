@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Présentation de l’application de placement des participants dans un amphithéâtre." />
+    <title>Application de placement | Boni Anvo</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="placement.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="../../index.html" aria-label="Retour au portfolio"><span class="wordmark-mark">B</span><span>BONI ANVO<span class="wordmark-dot">.</span></span></a>
+      <nav class="navigation" aria-label="Navigation principale"><a href="../../index.html#projets">Tous les projets</a><a class="nav-contact" href="../../index.html#contact">Me contacter <span class="arrow-icon arrow-up-right" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></svg></span></a></nav>
+    </header>
+    <main class="placement-page">
+      <a class="back-link" href="../../index.html#projets"><span class="arrow-icon arrow-left" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12H4m7-7-7 7 7 7"/></svg></span>Retour aux projets</a>
+      <section class="placement-intro">
+        <p class="eyebrow">PROJET DE FORMATION</p>
+        <h1>Application de placement<br /><span class="highlight">en amphithéâtre.</span></h1>
+        <p class="intro-copy">Application de bureau développée avec CustomTkinter. Elle organise les participants sur un plan de 48 places, en tenant compte des critères de répartition définis dans le programme.</p>
+        <div class="tech-logos" aria-label="Technologies utilisées"><span class="tech-logo" title="Python"><img src="../../assets/icons/python.svg" alt="Python" /></span><span class="tech-text">CustomTkinter</span><span class="tech-text">JSON</span><span class="tech-text">CSV</span></div>
+      </section>
+
+      <section class="layout-panel" aria-labelledby="layout-title">
+        <div class="panel-heading"><div><p class="eyebrow">APERÇU DE LA DISPOSITION</p><h2 id="layout-title">Plan de l’amphithéâtre</h2></div><p>48 places numérotées</p></div>
+        <div class="screen-label">ÉCRAN / FORMATEUR</div>
+        <div class="seat-map" id="seat-map" role="img" aria-label="Plan schématique des 48 places de l’application"></div>
+        <p class="diagram-note">Schéma de la disposition programmée. Les places sont libres dans cet aperçu, qui ne présente aucune donnée personnelle de participant.</p>
+      </section>
+
+      <section class="project-info">
+        <article><p class="eyebrow">FONCTIONNEMENT</p><h2>De la saisie au plan</h2><p>Les participants peuvent être saisis dans l’application ou importés depuis un fichier CSV. Le programme cherche ensuite une place en vérifiant les règles de voisinage, puis actualise le plan.</p></article>
+        <article><p class="eyebrow">FONCTIONS RÉALISÉES</p><ul><li>Placement automatique et déplacement manuel des participants</li><li>Règles de répartition par sexe, domaine, entreprise, poste, origine et équipe</li><li>Import et export des listes au format CSV</li><li>Sauvegarde des placements au format JSON</li><li>Génération d’une fiche de placement imprimable et statistiques de remplissage</li></ul></article>
+      </section>
+
+      <section class="source-panel">
+        <div><p class="eyebrow">CONSULTER LE CODE</p><h2>Application de bureau</h2><p>Le fichier source est disponible au téléchargement. Il s’exécute sur ordinateur avec les dépendances indiquées dans le guide. Cette version Tkinter n’est pas une application web exécutable dans le navigateur.</p></div>
+        <div class="source-actions"><a class="button button-primary" href="amphi_final.py" download>Télécharger le code source <span class="arrow-icon arrow-down" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span></a><a class="text-link" href="README.txt">Lire le guide de lancement <span class="arrow-icon arrow-up-right" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></svg></span></a></div>
+      </section>
+      <footer class="placement-footer"><a href="../../index.html">Boni Anvo</a><span>PORTFOLIO · RITEL</span><a href="../../index.html#contact">Contact <span class="arrow-icon arrow-up" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20V4M5 11l7-7 7 7"/></svg></span></a></footer>
+    </main>
+    <script src="placement.js" defer></script>
+  </body>
+</html>
