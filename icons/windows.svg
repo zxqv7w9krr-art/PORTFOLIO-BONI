@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title">
-  <title id="title">Windows Server</title>
-  <path fill="#f35325" d="M4 8.5 21 6v16H4V8.5Z"/>
-  <path fill="#81bc06" d="M24 5.5 44 3v19H24v-16.5Z"/>
-  <path fill="#05a6f0" d="M4 25h17v16L4 38.5V25Z"/>
-  <path fill="#ffba08" d="M24 25h20v20l-20-3v-17Z"/>
-</svg>
